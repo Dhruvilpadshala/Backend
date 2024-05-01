@@ -9,4 +9,6 @@ router.post("/signup", UsersController.signUp);
 // Route for user login
 router.post("/login", loginController.login);
 
+router.get("/verify/:userId", UsersController.verify);
+
 module.exports = router;
